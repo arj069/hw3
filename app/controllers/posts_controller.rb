@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new 
-    @post["name"] = params["post"]["name"]
+    @post["name"] = params["post"]["title"]
     @post["description"] = params["post"]["description"]
     @post["posted_on"] = params["post"]["date"]
     @post.save

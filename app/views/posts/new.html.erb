@@ -1,11 +1,11 @@
 <%= form_with :model => @post do |form| %>
   <p>
-    <%= form.label "name", "Post Name" %>
-    <%= form.text_field "name" %>
+    <%= form.label "title", "Post Name" %>
+    <%= form.text_field "title" %>
   </p>
   <p>
     <%= form.label "date", "Activity date" %>
-    <%= form.text_field "date" %>
+    <%= form.date_field "date" %>
   </p>
   <p>
     <%= form.label "description", "Description" %>
